@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repoTareas", "repoTareas.csproj", "{E77B190F-4E31-47B1-BDB0-47E8E5CE102D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E77B190F-4E31-47B1-BDB0-47E8E5CE102D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77B190F-4E31-47B1-BDB0-47E8E5CE102D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77B190F-4E31-47B1-BDB0-47E8E5CE102D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77B190F-4E31-47B1-BDB0-47E8E5CE102D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3F0ABDF-8404-4660-96FB-4ACACB192B97}
+	EndGlobalSection
+EndGlobal
