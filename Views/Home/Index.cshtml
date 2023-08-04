@@ -1,8 +1,85 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿<head>
+    <title>Administrador de Tareas</title>
+    <link rel="stylesheet" href="~/css/estilosTareas.css">
+</head>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Administrador de tareas</h1>
 </div>
+<div class="table-container">
+    <div class="column">
+        <h2>TO DO</h2>
+        <div class="task-list" id="todo-tasks">
+            <!-- Las tareas "TO DO" se agregarán aquí -->
+        </div>
+    </div>
+    <div class="column">
+        <h2>IN PROGRESS</h2>
+        <div class="task-list" id="inprogress-tasks">
+            <!-- Las tareas "IN PROGRESS" se agregarán aquí -->
+        </div>
+    </div>
+    <div class="column">
+        <h2>REVIEWING</h2>
+        <div class="task-list" id="reviewing-tasks">
+            <!-- Las tareas "REVIEWING" se agregarán aquí -->
+        </div>
+    </div>
+    <div class="column">
+        <h2>DONE</h2>
+        <div class="task-list" id="done-tasks">
+            <!-- Las tareas "DONE" se agregarán aquí -->
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ModalDetalleTarea" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- Encabezado del Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Detalles de tarea</h5>
+                <!-- Botón para cerrar el modal -->
+                <button type="button" class="close" id="cerrarModal" aria-label="Cerrar" onclick="cerrarModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Cuerpo del Modal -->
+            <div class="modal-body" id="modalBody">
+                <div class="container">
+                    <h2 id="nombreTarea">Tarea: </h2>
+                    <input type="number" id="idTareaSeleccionada" hidden/>
+                    <p class="infoTarea" id="UsuarioTarea"></p>
+                    <p class="infoTarea" id="EstadoTarea"></p>
+                    <p class="infoTarea" id="DescripcionTarea"></p>
+                </div>
+            </div>
+            <!-- Pie del Modal -->
+            <div class="modal-footer">
+                <button type="button" id="eliminarTarea" class="btn btn-secondary" onclick="eliminarTarea()">Eliminar</button>
+                <button type="button" id="avanzarTarea" class="btn btn-primary" onclick="avanzarTarea()">AL SIGUIENTE PASO!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="~/js/AdministracionTareas.js"></script>

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+.task-card {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.clickable-task {
+   
+}
+
+
+.infoTarea {
+    font-size: 24px !important;
+}
+
+.modalBody {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
